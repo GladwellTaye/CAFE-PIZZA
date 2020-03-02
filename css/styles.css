@@ -48,7 +48,7 @@ ul li a {
 .nu{
     background-image: url(../bg/menu.jpg);
     background-size: cover;
-    height: 99vh;
+    height: 130vh;
     background-repeat: no-repeat;
 }
 #me{
@@ -57,10 +57,10 @@ ul li a {
 .or{
     background-color: black;
     background-size: cover;
-    height: 99vh;
+    height: 130vh;
     background-repeat: no-repeat; 
     color: blanchedalmond;
-    font-size: 24px;
+    font-size: 14px;
     font-family: fantasy;
 }
 .or ul li{
@@ -100,4 +100,12 @@ input[type=text], select {
     background-color: #f2f2f2;
     padding: 20px;
   }
-  
+  #chick{
+      text-align: center;
+  }
+  #chick {
+      padding: 20px;
+  }
+  .lms{
+      text-align: right;
+  }
