@@ -10,7 +10,10 @@ Pizza.prototype.combineProperties = function() {
 
 Pizza.prototype.sizeToppingCrust = function(){
     return this.size  + this.topping + this.crust;
+}
 
+
+//User Interface logic
 
 $(document).ready(function(){
     
