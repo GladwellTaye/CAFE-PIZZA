@@ -234,4 +234,7 @@ input[type=text], select {
       display: block;
       text-align: center;
     }
+    #yoo{
+      text-align: center;
+    }
   }
