@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.4.1.js"></script>
-
+  <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -173,106 +173,52 @@
   </div>
 
   <div class="container">
-    <form div class="form-group text-center myform">
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-      <label for="country">County</label>
-      <select id="country" name="country">
-        <option value="500">Baringo</option>
-        <option value="500">Bomet</option>
-        <option value="500">Bungoma</option>
-        <option value="500">Busia</option>
-        <option value="500">Elgeyo-Marakwet</option>
-        <option value="500">Embu</option>
-        <option value="500">Garissa</option>
-        <option value="500">Homa Bay</option>
-        <option value="500">Isiolo</option>
-        <option value="500">Kajiado</option>
-        <option value="500">Kakamega</option>
-        <option value="500">Kericho</option>
-        <option value="500">Kiambu</option>
-        <option value="500">Kilifi</option>
-        <option value="500">Kirinyaga</option>
-        <option value="500">Kisii</option>
-        <option value="500">Kisumu</option>
-        <option value="500">Kitui</option>
-        <option value="500">kwale</option>
-        <option value="500">Laikipia</option>
-        <option value="500">Lamu</option>
-        <option value="500">Machakos</option>
-        <option value="500">Makueni</option>
-        <option value="500">Marsabit</option>
-        <option value="500">Meru</option>
-        <option value="500">Migori</option>
-        <option value="500">Mombasa</option>
-        <option value="500">Muranga</option>
-        <option value="500">Nairobi</option>
-        <option value="500">Nakuru</option>
-        <option value="500">Nandi</option>
-        <option value="500">Narok</option>
-        <option value="500">Nyamira</option>
-        <option value="500">Nyandarua</option>
-        <option value="500">Nyeri</option>
-        <option value="500">Samburu</option>
-        <option value="500">Siaya</option>
-        <option value="500">Taita-Taveta</option>
-        <option value="500">Tana-River</option>
-        <option value="500">Tharaka-Nithi</option>
-        <option value="500">Trans-Nzoia</option>
-        <option value="500">Turukana</option>
-        <option value="500">Uasin Gishu</option>
-        <option value="500">Vihiga</option>
-        <option value="500">wajir</option>
-        <option value="500">West Pokot</option>
-
-      </select>
-      <label for="lname">Pizza</label>
-
-      <label for="country">Size</label>
-      <select id="country" name="country">
-        <option value="500">Large</option>
-        <option value="250">medium</option>
-        <option value="0">Small</option>
-      </select>
-      </select>
-      <label for="lname">Menu</label>
-
-      <label for="country"></label>
-      <select id="country" name="country">
-        <option value="500">Hawaiian</option>
-        <option value="500">Mexican fiesta</option>
-        <option value="600">Chesse salami</option>
-        <option value="600">Nduja</option>
-        <option value="550">BBQ chicken</option>
-        <option value="550">Chicken mushroom</option>
-        <option value="600">Peri peri</option>
-        <option value="600">Tikka</option>
-        <option value="350">Margherita</option>
-        <option value="350">cheese</option>
-        <option value="350">Original vegi</option>
-        <option value="600">Peporoni</option>
-        <option value="600">Sweet chilli chicken</option>
-      </select>
-      <label for="country"> Select type of crust</label>
-      <select id="country" name="country">
-        <option value="5">Thin Crust</option>
-        <option value="10">Thick Crust</option>
-        <option value="15">Glutten Free</option>
-        <option value="20">Cheese Stuffing</option>
-      <select>
-        <label for="country">QUANTITY</label>
-        <input type="text" id="fname" name="firstname" placeholder="number of order">
-      </select> 
-      
-
-  </div>
-
-  <input type="submit" value="Submit">
+  <form id="takeInputs">
+      <br>
+      <div class="row jumbotron" id="forForm"> 
+          <div class="col-md-3">
+              <div class="tab" id="sizeSelection"> 
+                <label>Select Pizza Size Here: </label>
+                <br>
+                <input type="radio" name="size" value="1000" val1 ="Large" oninvalid="alert('You must select size!');"required/>Large
+                <br>
+                <input type="radio" name="size" value="500" val1="Medium" />Medium
+                <br>
+                <input type="radio" name="size" value="300" val1="Small">Small
+              </div> 
+          </div>
+          <div class="col-md-5">
+                  <div class="tab">
+                    <label>Select Preferred Pizza Topping Here: </label>
+                    <br>
+                      <input type="radio" name="topping" value="100" oninvalid="alert('You must select topping!');"required/>Pepperoni
+                      <br>
+                      <input type="radio" name="topping" value="150"/>Bacon
+                      <br>
+                      <input type="radio" name="topping" value="100"/>Extra-Cheese
+                  </div> 
+              </div>
+              <div class="col-md-4">
+                      <div class="tab">
+                        <label>Select Preferred Pizza Crust Here: </label>
+                        <br>
+                        <input type="radio" name="crust" value="100" oninvalid="alert('You must select crust!');"required/>Crispy
+                        <br>
+                        <input type="radio" name="crust" value="150"/>Stuffy
+                        <br>
+                        <input type="radio" name="crust" value="200"/>Gluten-free
+                      </div> 
+                  </div>
+      </div>  
+       <h5> Delivery Service?</h5>  
+        <input  type="radio" id="yes" class="btn btn-success" name="delivery" value="yes">Yes</input>
+        <br><br>
+        <input  type="radio" id="delivery1" class="btn btn-success" name="delivery" value="no">No</input>
+      <button type="submit" value="submit" class="btn btn-success" id="orderPlacement">Checkout</button>     
   </form>
+  
+   
+   
   </div>
 
 </body>
