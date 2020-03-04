@@ -33,7 +33,7 @@ $(document).ready(function(){
        if(radioValue=="yes"){
            prompt("Please Enter Delivery Location and Your Tel.")
            alert("Thanks. Your Order Will be Delivered to Your Location.");
-           alert('You will incur a delivery fee of Ksh. 250')
+           alert('You will incur a delivery fee of Ksh. 1050')
        }
        if (radioValue=="yes"){
          var deliveryFee = parseInt(250);
