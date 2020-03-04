@@ -38,7 +38,7 @@ $(document).ready(function(){
        if (radioValue=="yes"){
          var deliveryFee = parseInt(250);
        } else {
-         deliveryFee = 0;
+         deliveryFee = 100;
        }
         
        $("ol#charges").append("<li>" + newPizza.sizeToppingCrust() + deliveryFee + "</li>");
